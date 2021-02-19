@@ -1,12 +1,9 @@
  #!/bin/bash
-   echo "Enter n value"
-   read n
- for ((i=1;i<=n;i==))
+ echo "Enter n value"
+ read n
+temp=0
+for ((i=1;i<=n;i++))
  do
-    count=1
- for ((j=1;j<=i;j++))
- do
-    count=$(($count * 2))
-   done
- echo $count
-done
+   temp=$(($temp+1/$i))
+ done
+echo $temp
